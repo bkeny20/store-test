@@ -450,6 +450,10 @@ body {
   margin-bottom: 14px;
 }
 
+.modal-meta .meta-item:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .meta-item { display: flex; flex-direction: column; gap: 2px; }
 
 .meta-label {

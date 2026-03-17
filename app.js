@@ -77,7 +77,7 @@ function buildCard(item) {
 
   card.innerHTML = `
     <div class="card-image-wrap">
-      <img class="card-image" src="${item.image}" alt="${item.name}" loading="lazy" />
+      <img class="card-image" src="${item.image}" alt="${item.name}" loading="lazy" onerror="if('${item.imageFallback||''}')this.src='${item.imageFallback||''}'" />
       <span class="card-category-badge">${item.category}</span>
       ${item.inStock ? `<span class="card-instock-badge">In Stock</span>` : ""}
     </div>
@@ -134,8 +134,25 @@ function openModal(item) {
   document.getElementById("modalDescription").textContent = item.description;
   document.getElementById("modalPoints").textContent = `${item.pointCost.toLocaleString()} pts`;
   document.getElementById("modalDollars").textContent = `$${dollars}`;
-  document.getElementById("modalVendor").textContent = item.vendor;
+
+  // Vendor — link to product page if available
+  const vendorEl = document.getElementById("modalVendor");
+  if (item.vendorUrl) {
+    vendorEl.innerHTML = `<a href="${item.vendorUrl}" target="_blank" rel="noopener" style="color:var(--red);text-decoration:underline;">${item.vendor}</a>`;
+  } else {
+    vendorEl.textContent = item.vendor;
+  }
+
+  // Retail price
+  const retailEl = document.getElementById("modalRetail");
+  if (retailEl) retailEl.textContent = item.retailPrice || "—";
+
   document.getElementById("modalLead").textContent = item.leadTime;
+
+  // Image with fallback for Galls/vendor images that may block hotlinking
+  const img = document.getElementById("modalImage");
+  img.src = item.image;
+  img.onerror = () => { if (item.imageFallback) img.src = item.imageFallback; };
 
   // Stock badge
   const badge = document.getElementById("modalBadge");
