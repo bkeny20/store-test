@@ -42,6 +42,12 @@ body {
   border-bottom: 4px solid var(--red);
 }
 
+.header-logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
