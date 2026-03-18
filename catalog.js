@@ -35,7 +35,7 @@ const CATALOG = [
     leadTime: "1–2 weeks",
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
     colors: ["Black", "LAPD Navy", "Silver Tan"],
-    customizable: false,
+    customizable: true,
     customLabel: "",
     inStock: false,
     stockNote: ""
