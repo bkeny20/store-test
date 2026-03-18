@@ -43,8 +43,10 @@ body {
 }
 
 .header-logo {
-  height: 64px;
+  height: auto;
   width: auto;
+  max-height: 64px;
+  max-width: 120px;
   object-fit: contain;
 }
 
