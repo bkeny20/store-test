@@ -7,7 +7,7 @@
 //  CONFIGURATION — update this URL after you
 //  deploy your Google Apps Script web app.
 // ──────────────────────────────────────────────
-const APPS_SCRIPT_URL = "YOUR_APPS_SCRIPT_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz9wwsg2Nu0sEOwF2yQQUN7QNVKB_7hudYYKB-SqiN2cEJq2pR_IS3RJ48MHcWpz8qdDw/exec";
 
 // ──────────────────────────────────────────────
 //  STATE
