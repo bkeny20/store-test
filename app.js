@@ -86,8 +86,8 @@ function buildCard(item) {
       <div class="card-desc">${item.description}</div>
       <div class="card-footer">
         <div>
-          <div class="card-points">${item.pointCost.toLocaleString()} <span style="font-size:.75rem;font-weight:600;color:var(--mid)">pts</span></div>
-          <div class="card-dollars">$${dollars} value</div>
+          <div class="card-points">$${dollars}</div>
+          <div class="card-dollars">${item.pointCost.toLocaleString()} pts</div>
         </div>
         <button class="card-order-btn" tabindex="-1">Order</button>
       </div>
@@ -132,8 +132,8 @@ function openModal(item) {
   document.getElementById("modalCategory").textContent = item.category;
   document.getElementById("modalTitle").textContent = item.name;
   document.getElementById("modalDescription").textContent = item.description;
-  document.getElementById("modalPoints").textContent = `${item.pointCost.toLocaleString()} pts`;
-  document.getElementById("modalDollars").textContent = `$${dollars}`;
+  document.getElementById("modalPoints").textContent = `$${dollars}`;
+  document.getElementById("modalDollars").textContent = `${item.pointCost.toLocaleString()} pts`;
 
   // Vendor — link to product page if available
   const vendorEl = document.getElementById("modalVendor");
@@ -236,6 +236,7 @@ function resetForm() {
 async function handleSubmit() {
   const item = currentItem;
   const name = document.getElementById("fieldName").value.trim();
+  const email = document.getElementById("fieldEmail").value.trim();
   const size = document.getElementById("fieldSize").value;
   const color = document.getElementById("fieldColor").value;
   const custom = document.getElementById("fieldCustom").value.trim();
@@ -244,12 +245,14 @@ async function handleSubmit() {
 
   // Basic validation
   if (!name) { alert("Please enter your full name."); return; }
+  if (!email || !email.includes("@")) { alert("Please enter a valid email address."); return; }
   if (item.sizes && item.sizes.length > 0 && !size) { alert("Please select a size."); return; }
   if (item.colors && item.colors.length > 0 && !color) { alert("Please select a color."); return; }
   if (!qty || qty < 1) { alert("Please enter a valid quantity."); return; }
 
   const payload = {
     memberName:   name,
+    email:        email,
     itemId:       item.id,
     itemName:     item.name,
     category:     item.category,
