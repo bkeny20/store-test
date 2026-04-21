@@ -21,6 +21,7 @@ const CATALOG = [
     inStock: true,
     stockNote: "Available for pickup at the station in limited sizes — check with store committee."
   },
+  /*
   {
     id: "quarter-zip",
     name: "Propper Kinetic® Quarter-Zip Pullover",
@@ -40,6 +41,7 @@ const CATALOG = [
     inStock: false,
     stockNote: ""
   },
+  */
   {
     id: "tactical-pants",
     name: "Propper Men's Kinetic Tactical Pants",
@@ -52,7 +54,7 @@ const CATALOG = [
     vendorUrl: "https://www.galls.com/propper-kinetic-pant",
     retailPrice: "$69.99",
     leadTime: "1–2 weeks",
-    sizes: ["28x30", "30x30", "30x32", "32x30", "32x32", "34x30", "34x32", "36x32", "38x32", "40x32"],
+    sizes: ["28x30", "28x32","30x30", "30x32", "32x30", "32x32", "34x30", "34x32", "36x32", "38x32", "40x32", "OTHER - Enter in Notes"],
     colors: ["Navy", "Gray", "Khaki"],
     customizable: false,
     customLabel: "",
@@ -71,7 +73,7 @@ const CATALOG = [
     vendorUrl: "https://www.galls.com/5-11-tactical-men-s-taclite-pro-ripstop-pants-v2",
     retailPrice: "$65.00",
     leadTime: "1–2 weeks",
-    sizes: ["28x30", "30x30", "30x32", "32x30", "32x32", "34x30", "34x32", "36x32", "38x32", "40x32"],
+    sizes: ["28x30", "30x30", "30x32", "32x30", "32x32", "34x30", "34x32", "36x32", "38x32", "40x32", "OTHER - Enter in Notes"],
     colors: ["Navy", "Gray", "Khaki"],
     customizable: false,
     customLabel: "",
@@ -83,7 +85,7 @@ const CATALOG = [
     name: "Propper 1/4 Zip Job Shirt",
     category: "Clothing",
     pointCost: 350,
-    description: "80% cotton / 20% polyester fleece job shirt with YKK Vislon® zipper and stand collar. Features dual-depth chest pockets, 2-channel pen pocket, mic clips at shoulders, anti-abrasion elbow and collar reinforcements, and ribbed cuffs. Free pair of socks included.",
+    description: "80% cotton / 20% polyester fleece job shirt with 1/4 zip and collar. CUSTOMIZED WITH YOUR NAME, CSFC LOGO, and AMERICAN FLAG.",
     image: "images/propper-job-shirt.jpg",
     imageFallback: "https://placehold.co/400x400/1a1a1a/ffffff?text=Propper+Job+Shirt",
     vendor: "Galls (Propper SM705)",
@@ -115,6 +117,7 @@ const CATALOG = [
     stockNote: ""
   },
   */
+  /*
   {
     id: "logo-stickers",
     name: "Logo Stickers",
@@ -131,6 +134,7 @@ const CATALOG = [
     inStock: true,
     stockNote: "Available for pickup at the station."
   },
+  */
   /*
   {
     id: "tactical-team-bag",
