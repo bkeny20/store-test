@@ -42,23 +42,62 @@ const CATALOG = [
   },
   {
     id: "tactical-pants",
-    name: "Propper Kinetic® Tactical Pant",
+    name: "Propper Men's Kinetic Tactical Pants",
     category: "Duty Gear",
-    pointCost: 325,
-    description: "The next generation of tactical pants built with NEXStretch® ripstop fabric — 65% polyester, 32% cotton, 3% spandex — for unrestricted movement on duty. Features Teflon™ DWR treatment to repel stains and moisture, reinforced knees with pad-ready openings, gusseted crotch, gripper waistband, ambidextrous cargo pockets with internal dividers, and wider belt loops with badge/sunglasses tabs. Professional appearance throughout your shift.",
-    image: "https://www.propper.com/media/catalog/product/f/5/f5294_black_front.jpg",
+    pointCost: 350,
+    description: "Built with NEXStretch® ripstop fabric — 65% polyester, 32% cotton, 3% spandex — for unrestricted movement on duty. Features Teflon™ DWR treatment to repel stains and moisture, reinforced knees with pad-ready openings, gusseted crotch, gripper waistband, ambidextrous cargo pockets with internal dividers, and wider belt loops. Free pair of socks included.",
+    image: "images/propper-kinetic-pant.jpg",
     imageFallback: "https://placehold.co/400x400/1a1a1a/ffffff?text=Propper+Kinetic+Pant",
-    vendor: "Galls (Propper F5294)",
+    vendor: "Galls (Propper F52944)",
     vendorUrl: "https://www.galls.com/propper-kinetic-pant",
-    retailPrice: "$64.99",
+    retailPrice: "$69.99",
     leadTime: "1–2 weeks",
     sizes: ["28x30", "30x30", "30x32", "32x30", "32x32", "34x30", "34x32", "36x32", "38x32", "40x32"],
-    colors: ["Black", "Khaki", "Charcoal Grey", "LAPD Navy", "Olive", "Coyote"],
+    colors: ["Navy", "Gray", "Khaki"],
     customizable: false,
     customLabel: "",
     inStock: false,
     stockNote: ""
   },
+  {
+    id: "511-taclite-pro-pant",
+    name: "5.11 Tactical Men's Taclite Pro Ripstop Pants",
+    category: "Duty Gear",
+    pointCost: 325,
+    description: "Lightweight Taclite® ripstop fabric with gusseted construction and triple-stitched seams for durability. Features 8 pockets, YKK zippers, kneepad compatibility, and stain-resistance treatment — built for all-day comfort on duty.",
+    image: "images/511-taclite-pro-pant.jpg",
+    imageFallback: "https://placehold.co/400x400/1a1a1a/ffffff?text=5.11+Taclite+Pro",
+    vendor: "Galls (5.11 Tactical)",
+    vendorUrl: "https://www.galls.com/5-11-tactical-men-s-taclite-pro-ripstop-pants-v2",
+    retailPrice: "$65.00",
+    leadTime: "1–2 weeks",
+    sizes: ["28x30", "30x30", "30x32", "32x30", "32x32", "34x30", "34x32", "36x32", "38x32", "40x32"],
+    colors: ["Navy", "Gray", "Khaki"],
+    customizable: false,
+    customLabel: "",
+    inStock: false,
+    stockNote: ""
+  },
+  {
+    id: "propper-job-shirt",
+    name: "Propper 1/4 Zip Job Shirt",
+    category: "Clothing",
+    pointCost: 350,
+    description: "80% cotton / 20% polyester fleece job shirt with YKK Vislon® zipper and stand collar. Features dual-depth chest pockets, 2-channel pen pocket, mic clips at shoulders, anti-abrasion elbow and collar reinforcements, and ribbed cuffs. Free pair of socks included.",
+    image: "images/propper-job-shirt.jpg",
+    imageFallback: "https://placehold.co/400x400/1a1a1a/ffffff?text=Propper+Job+Shirt",
+    vendor: "Galls (Propper SM705)",
+    vendorUrl: "https://www.galls.com/propper-quarter-zip-job-shirt",
+    retailPrice: "$69.99",
+    leadTime: "1–2 weeks",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    colors: ["Black", "LAPD Navy"],
+    customizable: false,
+    customLabel: "",
+    inStock: false,
+    stockNote: ""
+  },
+  /*
   {
     id: "work-boots",
     name: "Work Boots",
@@ -75,6 +114,7 @@ const CATALOG = [
     inStock: false,
     stockNote: ""
   },
+  */
   {
     id: "logo-stickers",
     name: "Logo Stickers",
@@ -91,6 +131,7 @@ const CATALOG = [
     inStock: true,
     stockNote: "Available for pickup at the station."
   },
+  /*
   {
     id: "tactical-team-bag",
     name: "Galls Tactical Team Bag",
@@ -110,6 +151,7 @@ const CATALOG = [
     inStock: false,
     stockNote: ""
   },
+  */
 ];
 
 // ============================================================
