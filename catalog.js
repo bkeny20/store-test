@@ -9,7 +9,7 @@ const CATALOG = [
     id: "company-tshirt",
     name: "Company T-Shirt",
     category: "Clothing",
-    pointCost: 250,
+    pointCost: 100,
     description: "Official CSFC t-shirt with embroidered company logo on the left chest. 100% cotton, pre-shrunk.",
     image: "https://placehold.co/400x400/cc2200/ffffff?text=Company+T-Shirt",
     vendor: "Local Embroidery",
