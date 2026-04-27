@@ -10,13 +10,29 @@ const CATALOG = [
     name: "Company T-Shirt",
     category: "Clothing",
     pointCost: 100,
-    description: "Official CSFC t-shirt with embroidered company logo on the left chest. 100% cotton, pre-shrunk.",
+    description: "Official CSFC t-shirt with embroidered company logo on the left chest.",
     image: "https://placehold.co/400x400/cc2200/ffffff?text=Company+T-Shirt",
     vendor: "Local Embroidery",
     leadTime: "2–3 weeks",
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
-    colors: ["Black", "Navy", "Heather Gray"],
-    customizable: true,   // e.g. name on back
+    colors: ["Navy", "Heather Gray"],
+    customizable: false,   // e.g. name on back
+    customLabel: "Name for back (optional)",
+    inStock: true,
+    stockNote: "Available for pickup at the station in limited sizes and color — check with store committee."
+  },
+  {
+    id: "company-polo",
+    name: "CSFC Propper Uniform Polo",
+    category: "Clothing",
+    pointCost: 150,
+    description: "CSFC Embroidered Polo shirt. Company logo embroidered onto Propper Uniform Polo.",
+    image: "https://www.galls.com/photos/styles/SJ273_LAPD_1500_1.jpg",
+    vendor: "Galls (SJ273)",
+    leadTime: "2–3 weeks",
+    sizes: ["XS","S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    colors: ["Navy"],
+    customizable: false,   // e.g. name on back
     customLabel: "Name for back (optional)",
     inStock: true,
     stockNote: "Available for pickup at the station in limited sizes — check with store committee."
@@ -135,27 +151,27 @@ const CATALOG = [
     stockNote: "Available for pickup at the station."
   },
   */
-  /*
+  
   {
-    id: "tactical-team-bag",
-    name: "Galls Tactical Team Bag",
+    id: "511-tactical-bag",
+    name: "5.11 Gear Bag",
     category: "Duty Gear",
-    pointCost: 350,
-    description: "Carries all the gear and apparel you need to be prepared for any situation. Built from rugged 900-denier polyester construction with an easy G-shield zipper. Large main compartment fits full gear loadout, with multiple exterior pockets for organized access. Adjustable shoulder strap and carry handles. An excellent station bag or go-bag for any first responder.",
-    image: "https://www.galls.com/photos/styles/BG135_1500_1.JPG",
-    imageFallback: "https://placehold.co/400x400/1a1a1a/ffffff?text=Galls+Team+Bag",
-    vendor: "Galls (BG135)",
-    vendorUrl: "https://www.galls.com/galls-tactical-team-bag",
-    retailPrice: "$70.00",
+    pointCost: 440,
+    description: "5.11 Tactical Red 8100 Bag. Used to transport turnout gear and other equipment. 32in H x 16in W x 19in D",
+    image: "https://www.galls.com/photos/styles/BG2500_RED_1.jpg",
+    imageFallback: "https://www.galls.com/photos/styles/BG2500_RED_1.jpg",
+    vendor: "Galls (BG2500 RED)",
+    vendorUrl: "https://www.galls.com/5-11-tactical-red-8100-bag-v2?PMOPV1=RED&utm_source=criteo&utm_medium=display&utm_id=779912&ad_group_id=460813&ad_id=2530086&utm_campaign=criteo_prospecting&cto_pld=h0Sml0y7AQATYf0qZRqHmg",
+    retailPrice: "$88.00",
     leadTime: "1–2 weeks",
     sizes: [],
-    colors: ["Black"],
+    colors: ["Red"],
     customizable: false,
     customLabel: "",
     inStock: false,
     stockNote: ""
   },
-  */
+  
 ];
 
 // ============================================================
