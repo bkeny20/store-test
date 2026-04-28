@@ -63,7 +63,7 @@ const CATALOG = [
     name: "Propper Men's Kinetic Tactical Pants",
     category: "Duty Gear",
     pointCost: 350,
-    description: "Built with NEXStretch® ripstop fabric — 65% polyester, 32% cotton, 3% spandex — for unrestricted movement on duty. Features Teflon™ DWR treatment to repel stains and moisture, reinforced knees with pad-ready openings, gusseted crotch, gripper waistband, ambidextrous cargo pockets with internal dividers, and wider belt loops. Free pair of socks included.",
+    description: "Built with NEXStretch® ripstop fabric — 65% polyester, 32% cotton, 3% spandex — for unrestricted movement on duty. Features Teflon™ DWR treatment to repel stains and moisture, reinforced knees with pad-ready openings, gusseted crotch, gripper waistband, ambidextrous cargo pockets with internal dividers, and wider belt loops.",
     image: "images/propper-kinetic-pant.jpg",
     imageFallback: "https://placehold.co/400x400/1a1a1a/ffffff?text=Propper+Kinetic+Pant",
     vendor: "Galls (Propper F52944)",
@@ -110,7 +110,7 @@ const CATALOG = [
     leadTime: "1–2 weeks",
     sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
     colors: ["Black", "LAPD Navy"],
-    customizable: false,
+    customizable: true,
     customLabel: "",
     inStock: false,
     stockNote: ""
