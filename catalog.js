@@ -10,7 +10,7 @@ const CATALOG = [
     name: "Company T-Shirt",
     category: "Clothing",
     pointCost: 100,
-    description: "Official CSFC t-shirt with embroidered company logo on the left chest.",
+    description: "Official CSFC t-shirt with printed company logo on the left chest.",
     image: "images/Gilden_Shirt.png",
     vendor: "Local Embroidery",
     leadTime: "2–3 weeks",
