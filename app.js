@@ -67,7 +67,7 @@ function renderGrid(category) {
 }
 
 function buildCard(item) {
-  const dollars = (item.pointCost * 0.20).toFixed(2);
+  const dollars = (item.pointCost * 0.20).toFixed(2); 
 
   const card = document.createElement("div");
   card.className = "item-card";
@@ -84,10 +84,9 @@ function buildCard(item) {
     <div class="card-body">
       <div class="card-name">${item.name}</div>
       <div class="card-desc">${item.description}</div>
-      <div class="card-footer">
+      <div class="card-footer"> 
         <div>
           <div class="card-points">$${dollars}</div>
-          <div class="card-dollars">${item.pointCost.toLocaleString()} pts</div>
         </div>
         <button class="card-order-btn" tabindex="-1">Order</button>
       </div>
