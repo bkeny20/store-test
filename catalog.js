@@ -11,7 +11,7 @@ const CATALOG = [
     category: "Clothing",
     pointCost: 100,
     description: "Official CSFC t-shirt with embroidered company logo on the left chest.",
-    image: "https://placehold.co/400x400/cc2200/ffffff?text=Company+T-Shirt",
+    image: "images/Gilden_Shirt.png",
     vendor: "Local Embroidery",
     leadTime: "2–3 weeks",
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
